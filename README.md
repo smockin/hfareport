@@ -1,9 +1,5 @@
 # hfareport
 
-<!-- badges: start -->
-[![R-CMD-check](https://github.com/smockin/hfareport/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/smockin/hfareport/actions/workflows/R-CMD-check.yaml)
-<!-- badges: end -->
-
 Health Facility Assessment (HFA) summary reports, from REDCap exports to
 colour-coded Word documents, in R.
 
