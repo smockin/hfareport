@@ -1,0 +1,35 @@
+Package: hfareport
+Type: Package
+Title: Health Facility Assessment Summary Reports from REDCap Exports
+Version: 0.1.0
+Authors@R: c(
+    person("Morris", "Ogero", email = "ogeromorris@gmail.com",
+           role = c("aut", "cre")),
+    person("Rebecca", "Penzias", role = "ctb",
+           comment = "Developed the original Stata data-cleaning code on which hfa_clean() is based"),
+    person("Eric", "Ohuma", role = "ctb",
+           comment = "Developed the original Stata data-cleaning code on which hfa_clean() is based"))
+Description: Turns the module exports of a neonatal Health Facility
+    Assessment (HFA) collected in REDCap into one cleaned summary dataset,
+    then fills a bookmarked Microsoft Word template to produce one summary
+    report per facility. Cells are colour-coded against configurable rules so
+    that gaps stand out, and reports remain fully editable Word documents.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports:
+    officer (>= 0.6.0),
+    xml2,
+    zip,
+    stats,
+    utils,
+    tools
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/smockin/hfareport
+BugReports: https://github.com/smockin/hfareport/issues
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.1.1
